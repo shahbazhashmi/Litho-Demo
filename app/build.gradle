@@ -4,6 +4,8 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+apply plugin: 'kotlin-kapt'
+
 android {
     compileSdkVersion 28
     defaultConfig {
@@ -32,10 +34,10 @@ dependencies {
     implementation 'com.facebook.litho:litho-core:0.31.0'
     implementation 'com.facebook.litho:litho-widget:0.31.0'
 
-    annotationProcessor 'com.facebook.litho:litho-processor:0.31.0'
+    kapt 'com.facebook.litho:litho-processor:0.31.0'
 
     // SoLoader
-    implementation 'com.facebook.soloader:soloader:0.6.0'
+    implementation 'com.facebook.soloader:soloader:0.5.1'
 
     // For integration with Fresco
     implementation 'com.facebook.litho:litho-fresco:0.31.0'
@@ -45,7 +47,7 @@ dependencies {
     implementation 'com.facebook.litho:litho-sections-widget:0.31.0'
     compileOnly 'com.facebook.litho:litho-sections-annotations:0.31.0'
 
-    annotationProcessor 'com.facebook.litho:litho-sections-processor:0.31.0'
+    kapt 'com.facebook.litho:litho-sections-processor:0.31.0'
 
     // For testing
     testImplementation 'com.facebook.litho:litho-testing:0.31.0'

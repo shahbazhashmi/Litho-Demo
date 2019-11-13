@@ -10,13 +10,13 @@ class DemoActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val context = ComponentContext(this);
+        val context = ComponentContext(this)
 
         val component = Text.create(context)
             .text("Hello World new")
             .textSizeDip(50f)
-            .build();
+            .build()
 
-        setContentView(LithoView.create(context, component));
+        setContentView(LithoView.create(context, component))
     }
 }
