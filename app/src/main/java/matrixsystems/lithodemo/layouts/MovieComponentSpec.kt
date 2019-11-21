@@ -31,12 +31,12 @@ object MovieComponentSpec {
             .backgroundColor(Color.WHITE)
             .child(
                 Text.create(c)
-                    .text("Hello world")
+                    .text(title)
                     .textSizeSp(40f)
             )
             .child(
                 Text.create(c)
-                    .text("Litho tutorial")
+                    .text(imageUrl)
                     .textSizeSp(20f)
             )
             .build()
