@@ -21,15 +21,12 @@ object MovieSectionSpec {
 
         for (i in 0..31) {
             builder.child(
-                /*SingleComponentSection.create(c)
-                    .key(i.toString())
-                    .component(ListItem.create(c).build())*/
                 SingleComponentSection.create(c)
                     .key(i.toString())
                     .component(
                         MovieComponent.create(c)
                             .title("$i. Goku")
-                            .imageUrl("https://pbs.twimg.com/profile_images/1053055123193122816/IUwo6l_Q_400x400.jpg")
+                            .imageUrl("https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters_opt/p-dragon-ball-z-goku.jpg")
                             .build()
                     )
             )
