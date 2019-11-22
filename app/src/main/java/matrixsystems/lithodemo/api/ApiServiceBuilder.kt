@@ -10,7 +10,11 @@ import retrofit2.converter.gson.GsonConverterFactory
  */
 object ApiServiceBuilder {
     // Base URL
-    private const val URL = "https://reqres.in/api/"
+    private const val URL = "https://api.themoviedb.org/3/"
+
+    // Image URL
+    const val IMAGE_URL = "https://image.tmdb.org/t/p/w200"
+
     // Create Logger
     private val logger = HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
     // Create OkHttp Client

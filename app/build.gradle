@@ -22,6 +22,18 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    productFlavors {
+        flavorDimensions "default"
+
+        production {
+
+        }
+    }
+
+    productFlavors.all {
+        buildConfigField 'String', 'TMDB_API_KEY', '"8f52b1854fa79b9c3712a24d28d1945d"'
+    }
 }
 def paging_version = "1.0.1"
 def litho_version = "0.31.0"

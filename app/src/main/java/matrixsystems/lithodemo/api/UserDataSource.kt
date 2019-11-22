@@ -65,7 +65,7 @@ class UserDataSource : PageKeyedDataSource<Int, User>() {
         })
     }
     companion object {
-        const val PAGE_SIZE = 6
+        const val PAGE_SIZE = 15
         const val FIRST_PAGE = 1
     }
 }
