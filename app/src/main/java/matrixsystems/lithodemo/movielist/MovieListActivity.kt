@@ -17,7 +17,7 @@ class MovieListActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
         val itemViewModel = ViewModelProviders.of(this)
             .get(MovieViewModel::class.java)
-        itemViewModel.userPagedList.observe(this, Observer {
+        itemViewModel.moviePagedList.observe(this, Observer {
             adapter.submitList(it)
         })
         recyclerView.adapter = adapter
