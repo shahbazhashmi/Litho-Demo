@@ -1,6 +1,7 @@
 package matrixsystems.lithodemo
 
 import android.app.Application
+import com.facebook.drawee.backends.pipeline.Fresco
 import com.facebook.soloader.SoLoader
 
 /**
@@ -12,6 +13,9 @@ class AppController : Application() {
         super.onCreate()
 
         SoLoader.init(this, false)
+
+        Fresco.initialize(this)
+
     }
 
 }

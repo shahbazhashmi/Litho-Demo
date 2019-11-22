@@ -41,6 +41,7 @@ dependencies {
 
     // For integration with Fresco
     implementation 'com.facebook.litho:litho-fresco:0.31.0'
+    implementation 'com.facebook.fresco:fresco:1.13.0'
 
     // Sections
     implementation 'com.facebook.litho:litho-sections-core:0.31.0'

@@ -28,8 +28,8 @@ object MovieSectionSpec {
                     .key(i.toString())
                     .component(
                         MovieComponent.create(c)
-                            .title("$i. test data")
-                            .imageUrl("Litho tutorial lllp")
+                            .title("$i. Goku")
+                            .imageUrl("https://pbs.twimg.com/profile_images/1053055123193122816/IUwo6l_Q_400x400.jpg")
                             .build()
                     )
             )
