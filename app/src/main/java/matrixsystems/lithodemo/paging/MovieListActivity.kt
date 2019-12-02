@@ -1,4 +1,4 @@
-package matrixsystems.lithodemo.movielist
+package matrixsystems.lithodemo.paging
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

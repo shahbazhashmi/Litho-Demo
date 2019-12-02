@@ -1,4 +1,4 @@
-package matrixsystems.lithodemo.movielist
+package matrixsystems.lithodemo.paging
 
 import android.util.Log
 import android.view.LayoutInflater

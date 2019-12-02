@@ -1,4 +1,4 @@
-package matrixsystems.lithodemo
+package matrixsystems.lithodemo.lithopaging
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

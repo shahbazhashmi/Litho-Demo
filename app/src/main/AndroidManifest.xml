@@ -13,11 +13,11 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".movielist.MovieListActivity">
+        <activity android:name=".paging.MovieListActivity">
         </activity>
         <activity android:name=".userlist.UserListActivity">
         </activity>
-        <activity android:name=".MovieListActivity">
+        <activity android:name=".lithopaging.MovieListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

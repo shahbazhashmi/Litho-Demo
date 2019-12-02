@@ -1,4 +1,4 @@
-package matrixsystems.lithodemo.movielist
+package matrixsystems.lithodemo.paging
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
