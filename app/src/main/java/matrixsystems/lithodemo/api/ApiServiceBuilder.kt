@@ -14,6 +14,7 @@ object ApiServiceBuilder {
 
     // Image URL
     const val IMAGE_URL = "https://image.tmdb.org/t/p/w200"
+    const val THUMBNAIL_IMAGE_URL = "https://image.tmdb.org/t/p/w92"
 
     // Create Logger
     private val logger = HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)

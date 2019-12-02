@@ -15,7 +15,7 @@ import com.facebook.litho.widget.Text
 import com.facebook.yoga.YogaEdge.ALL
 import com.facebook.drawee.backends.pipeline.Fresco
 import com.facebook.drawee.interfaces.DraweeController
-
+import matrixsystems.lithodemo.R
 
 
 /**
@@ -24,7 +24,7 @@ import com.facebook.drawee.interfaces.DraweeController
 @LayoutSpec
 object MovieComponentSpec {
 
-    fun getImageController(imageUrl : String) = Fresco.newDraweeControllerBuilder()
+    fun getImageController(imageUrl : String?) = Fresco.newDraweeControllerBuilder()
         .setUri(imageUrl)
         .build()
 
@@ -33,8 +33,8 @@ object MovieComponentSpec {
     @OnCreateLayout
     internal fun onCreateLayout(
         c: ComponentContext,
-        @Prop title: String,
-        @Prop imageUrl: String
+        @Prop title: String?,
+        @Prop imageUrl: String?
     ): Component {
 
         return Column.create(c)
