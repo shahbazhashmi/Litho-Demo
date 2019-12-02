@@ -19,7 +19,6 @@ class MovieListActivity : AppCompatActivity() {
 
         val recyclerConfiguration = GridRecyclerConfiguration.create().numColumns(3).build()
 
-        //val component = ListItem.create(context).build()
         val component = RecyclerCollectionComponent.create(context)
             .disablePTR(true)
             .section(MovieSection.create(SectionContext(context)).build())

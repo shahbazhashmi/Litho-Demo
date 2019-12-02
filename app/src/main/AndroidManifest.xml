@@ -14,15 +14,16 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
         <activity android:name=".movielist.MovieListActivity">
+        </activity>
+        <activity android:name=".userlist.UserListActivity">
+        </activity>
+        <activity android:name=".MovieListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".userlist.UserListActivity">
-        </activity>
-        <activity android:name=".MovieListActivity"></activity>
         <activity android:name=".DemoActivity" />
         <activity android:name=".Demo2Activity" />
         <activity android:name=".MainActivity" />
