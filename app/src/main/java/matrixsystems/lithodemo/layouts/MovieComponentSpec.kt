@@ -1,6 +1,7 @@
 package matrixsystems.lithodemo.layouts
 
 import android.graphics.Color
+import android.graphics.Typeface
 
 import com.facebook.litho.Column
 import com.facebook.litho.Component
@@ -12,10 +13,12 @@ import com.facebook.litho.fresco.FrescoImage
 import com.facebook.litho.widget.Image
 import com.facebook.litho.widget.Text
 
-import com.facebook.yoga.YogaEdge.ALL
 import com.facebook.drawee.backends.pipeline.Fresco
 import com.facebook.drawee.drawable.ScalingUtils
 import com.facebook.drawee.interfaces.DraweeController
+import com.facebook.yoga.YogaAlign
+import com.facebook.yoga.YogaEdge.*
+import com.facebook.yoga.YogaPositionType
 import matrixsystems.lithodemo.R
 
 
@@ -47,11 +50,23 @@ object MovieComponentSpec {
                     .placeholderImageScaleType(ScalingUtils.ScaleType.CENTER_CROP)
                     .imageAspectRatio(0.66666666666667f)
             )
-            /*.child(
+            .child(
                 Text.create(c)
                     .text(title)
-                    .textSizeSp(10f)
-            )*/
+                    .textColor(Color.WHITE)
+                    .textStyle(Typeface.BOLD)
+                    .textSizeSp(12f)
+                    .widthPercent(100f)
+                    .maxLines(3)
+                    .backgroundColor(Color.parseColor("#40000000"))
+                    .positionType(YogaPositionType.ABSOLUTE)
+                    /**
+                     * set text over image to bottom
+                     */
+                    .positionDip(BOTTOM, 8f)
+                    .positionDip(LEFT, 8f)
+                    .paddingDip(ALL, 8f)
+            )
             .build()
     }
 
