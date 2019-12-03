@@ -1,5 +1,6 @@
 package matrixsystems.lithodemo.lithopaging
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.facebook.litho.ComponentContext
@@ -53,6 +54,7 @@ class MovieListActivity : AppCompatActivity() {
                     }
                 }
             })
+            .backgroundColor(Color.BLACK)
             .build()
 
         setContentView(LithoView.create(componentContext, component))

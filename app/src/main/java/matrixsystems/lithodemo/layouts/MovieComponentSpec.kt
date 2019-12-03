@@ -38,16 +38,15 @@ object MovieComponentSpec {
     ): Component {
 
         return Column.create(c)
-            .paddingDip(ALL, 16f)
-            .backgroundColor(Color.WHITE)
+            .backgroundColor(Color.BLACK)
             .child(
-                FrescoImage.create(c).controller(getImageController(imageUrl))
+                FrescoImage.create(c).controller(getImageController(imageUrl)).imageAspectRatio(0.66666666666667f)
             )
-            .child(
+            /*.child(
                 Text.create(c)
                     .text(title)
                     .textSizeSp(10f)
-            )
+            )*/
             .build()
     }
 
